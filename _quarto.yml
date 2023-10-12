@@ -8,6 +8,7 @@ website:
     left:
       - href: proposal.qmd
         text: Project Proposal
+    right:
       - href: about.qmd
         text: About
 
