@@ -6,8 +6,10 @@ website:
   title: "GeoMusketeer"
   navbar:
     left:
-      - proposal.qmd
-      - about.qmd
+      - href: proposal.qmd
+        text: Project Proposal
+      - href: about.qmd
+        text: About
 
 format:
   html:
