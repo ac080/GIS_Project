@@ -1,7 +1,0 @@
----
-title: "About"
----
-
-We are G1T1, comprising of Anthea and Amanda.
-
-In this website, we share our project findings and insights gained.
