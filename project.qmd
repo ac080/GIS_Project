@@ -11,13 +11,13 @@ Libya has been facing a serious crisis of being plagued by flood disasters in re
 
 Through this project, we want to find out the current state of preparedness in Derna city by mapping out the accessibility to emergency centres and medical services to aid in disaster relief. We hope to be able to provide meaningful insights on mitigating urban flood disasters in Derna city so as to provide actionable suggestions for future disaster management planning.
 
-## Project objectives:
+## Project objectives
 
 ------------------------------------------------------------------------
 
 Our objective is to analyse the accessibility to emergency evacuation centres and medical services in the event of a future flood.
 
-We plan to conduct this by comparing the locations of emergency and medical centres and their accessibility to residential and commercial areas which are densely populated, and analysing whether there is a sufficient number of emergency and medical centres in Derna city. \
+We plan to conduct this by comparing the locations of emergency and medical centres and their accessibility to residential and commercial areas which are densely populated, and analysing whether there is a sufficient number of emergency and medical centres in Derna city. 
 
 **Our 2 research questions are as follows:**
 

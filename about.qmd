@@ -1,5 +1,6 @@
 ---
 title: "About"
+editor: visual
 ---
 
 We are G1T1, comprising of Anthea and Amanda.
