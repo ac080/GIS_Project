@@ -1,0 +1,20 @@
+---
+title: "Data Collection"
+editor: visual
+---
+
+The data sets that were used for this project and their respective sources are stated below:
+
+| File Name                                                | Description                                                       | Source                                                                     |
+|----------------------------------------------------------|-------------------------------------------------------------------|----------------------------------------------------------------------------|
+| gis_osm_buildings_a\_free_1                              | Provides data on all buildings and building types.                | <https://download.geofabrik.de/africa/libya-latest-free.shp.zip>           |
+| gis_osm_roads_free_1                                     | Provides data on all roads and road types.                        | <https://download.geofabrik.de/africa/libya-latest-free.shp.zip>           |
+| Derna_city_250m_hexagon                                  | Analytical hexagon that covers area of Derma City                 | <https://data.humdata.org/dataset/250m-hexagonal-gird-over-city-of-derna>  |
+| DEM                                                      | Elevation model that covers area of Derna City                    | <https://data.humdata.org/dataset/libya-elevation-model>                   |
+| Hotosm_lby_buildings - Buildings                         | Provides data on all buildings and building types.                | <https://data.humdata.org/dataset/hotosm_lby_buildings>                    |
+| LYB_watrcrsl_rvr_3m_arcworld                             | Provides data on all rivers found.                                | <https://data.humdata.org/dataset/river-network-libya-cods>                |
+| Hotosm_lby_waterways - Waterways                         | Provides data on all major waterways and waterway types.          | <https://data.humdata.org/dataset/hotosm_lby_waterways>                    |
+| Hotosm_lby_health_facilities - Health Facilities         | Provides data on all health facilities and health facility types. | <https://data.humdata.org/dataset/hotosm_lby_health_facilities>            |
+| hotosm_lby_education_facilities --- Education Facilities | Provides data on all schools and school types.                    | <https://data.humdata.org/dataset/hotosm_lby_education_facilities>         |
+| Hotosm_lby_Populated_Places - Populated Places           | Provides data on most populated areas.                            | <https://data.humdata.org/dataset/hotosm_lby_populated_places>             |
+| EMSR696_AOI01_BLP                                        | Provided the road network that are affected by the flood          | <https://rapidmapping.emergency.copernicus.eu/EMSR696/download>            |

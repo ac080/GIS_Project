@@ -14,6 +14,8 @@ website:
         - datapreparation.qmd
         - chloropleth.qmd
         - accessibility.qmd
+      - href: results.qmd
+        text: Restuls & Discussion
       - href: about.qmd
         text: About
 

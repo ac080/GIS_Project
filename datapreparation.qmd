@@ -1,0 +1,36 @@
+---
+title: "Data Preparation"
+editor: visual
+---
+
+### Land Use Of Derna City
+
+------------------------------------------------------------------------
+
+Our study was based on the assumption of a serious flooding event, where the river banks and waterways all overflowed, and people would need to evacuate from their residences to emergency and medical facilities in the city. 
+
+Hence, we extracted different road, building and water body types from the [Humanitarian Data Exchange portal ](https://data.humdata.org/event/f1c3a777-4079-49fb-9d64-12a72f46f1e3) and [OSM buildings and road network](https://download.geofabrik.de/africa/libya.html) , and then clipped it to Derna City.
+
+1.  For buildings, we looked at residential areas, as that is where most people will be evacuating or rescued from. We also looked at healthcare and public facilities which act as emergency shelters and medical centres.
+
+2.  For waterways and water river network, we looked at major rivers and water bodies within Derna City, as areas surrounding these formations are floodplains. 
+
+3.  For education institutes and healthcare facilities, we looked at all of them as we took the assumption that these public areas will be used as shelters during a flooding event.
+
+4.  For populated places, we observed where the highest human concentration in Derna city was, to ascertain whether emergency and medical facilities were sufficient there.
+
+Finally, we merged layers with similar features together, such as waterways and river networks, public areas and healthcare facilities. 
+
+### Derna City Hexagon Map
+
+------------------------------------------------------------------------
+
+As the data obtained from open network sources includes the entire Libya map, we chose to use the hexagon map that only included Derna City from [Derna City 250m Hexagon Map](https://data.humdata.org/dataset/250m-hexagonal-gird-over-city-of-derna) to narrow down to our study area.
+
+### Flooding Extent Of Derna City
+
+------------------------------------------------------------------------
+
+In order to compare with our land use layers, we extracted the raster layer of flooding extent in Libya and the elevation model from the [Humanitarian Data Exchange portal](https://data.humdata.org/event/f1c3a777-4079-49fb-9d64-12a72f46f1e3). We then clipped the raster layer to the size of Derna City and stretched it to current extent to obtain results of the most heavily flooded zones in our study area. 
+
+\
