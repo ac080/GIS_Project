@@ -8,8 +8,12 @@ website:
     left:
       - href: project.qmd
         text: Project Proposal
-      - href: methodology.qmd
-        text: Methodology
+      - text: "Methodology"
+        menu:
+        - datacollection.qmd
+        - datapreparation.qmd
+        - chloropleth.qmd
+        - accessibility.qmd
       - href: about.qmd
         text: About
 
