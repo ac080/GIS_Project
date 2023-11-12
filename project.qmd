@@ -13,7 +13,7 @@ Through this project, we want to find out the current state of preparedness in D
 
 Our objective is to analyse the accessibility to emergency evacuation centres and medical services in the event of a future flood.
 
-We plan to conduct this by comparing the locations of emergency and medical centres and their accessibility to residential and commercial areas which are densely populated, and analysing whether there is a sufficient number of emergency and medical centres in Derna city. 
+We plan to conduct this by comparing the locations of emergency and medical centres and their accessibility to residential which are densely populated, and analysing whether there is a sufficient number of emergency and medical centres in Derna city. 
 
 **Our 2 research questions are as follows:**
 
@@ -32,8 +32,6 @@ The project will comprise of, but not limited to the followings steps:
 -   Designing and building GIS model and database to map the accessibility of emergency and medical centres in Derna city.
 
 -   Preparing report of findings.
-
--   Performing site suitability analysis by integrating GIS and multi-criteria evaluation methods.
 
 -   Preparing site suitability analysis report including detailed discussion of the analysing method used.
 
