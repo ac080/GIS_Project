@@ -3,19 +3,19 @@ title: "Preparation of Accessibility Map"
 editor: visual
 ---
 
-### **1. CREATING ACCESSIBILITY MAPS USING QNEAT3 PLUGIN**
+### 1. Creating Accessibility Maps Using QNEAT3 Plugin
 
 -   From the menu bar, go to **Processing -\> Toolbox**
 
-\
-![](images/iso_toolbox.png)
+    \
+    ![](images/iso_toolbox.png)
 
 -   A dialogue box pops up.
 
--   Type \'Iso Areas as Polygons (From Layer)\' and select it. 
+-   Type 'Iso Areas as Polygons (From Layer)' and select it. 
 
-\
-![](images/access1_iso.png){width="345"}
+    \
+    ![](images/access1_iso.png){width="345"}
 
 -   For Vector layer representing network, select the road layer that is unblocked (before flood) roads_derna_final
 
@@ -25,11 +25,11 @@ editor: visual
 
 -   For Direction field, select oneway
 
--   For Value for Forward direction, type in \'F\'
+-   For Value for Forward direction, type in 'F'
 
--   For Value for Backward direction, type in \'T\'
+-   For Value for Backward direction, type in 'T'
 
--   For Value for Both directions, type in \'B\'
+-   For Value for Both directions, type in 'B'
 
 -   Leave the rest of the fields Default.
 
@@ -41,7 +41,7 @@ editor: visual
 
 -   In order to save the new layer, we need to GeoPackage the layer
 
--   We can save the features by **Export \> Save Selected Features As** and create a new Geopackage layer. Remember to change the CRS projection to EPSG: 32634. For the file save it as \'Accessibility_before_flood\'.
+-   We can save the features by **Export \> Save Selected Features As** and create a new Geopackage layer. Remember to change the CRS projection to EPSG: 32634. For the file save it as 'Accessibility_before_flood'.
 
 ![](images/acess1_map_before.png)
 
@@ -49,7 +49,7 @@ editor: visual
 
 -   Right click on the layer and go to Properties.
 
--   Select the Symbology Tab. Change to Graduated symbol, and the value to Cost Level. Change the mode to \'Natural Breaks (Jenks)\', where the class breaks are created in a way that best groups similar values together, therefore maximising the differences between classes for more distinct visualisation. Click on Classify and select OK to close.
+-   Select the Symbology Tab. Change to Graduated symbol, and the value to Cost Level. Change the mode to 'Natural Breaks (Jenks)', where the class breaks are created in a way that best groups similar values together, therefore maximising the differences between classes for more distinct visualisation. Click on Classify and select OK to close.
 
 ![](images/access1_symbology.png){width="512"}
 
@@ -57,31 +57,26 @@ editor: visual
 
 ![](images/result_before_flood.png)
 
--   Repeat the steps to create a map for Accessibility_of_unblocked_roads. The road layer to be used will now be \'remaining_acc_roads\' (which are roads that are unblocked post flood) and start points will still remain the same.
-
-\
-
+-   Repeat the steps to create a map for Accessibility_of_unblocked_roads. The road layer to be used will now be 'remaining_acc_roads' (which are roads that are unblocked post flood) and start points will still remain the same.
 -   To obtain the layer on unblocked roads post flood, we have to manually remove the blocked roads from what we have researched.
-
--   To do so, click on the roads layer to make it active, and select \'select features by area\' or single click from the toolbar.
-
+-   To do so, click on the roads layer to make it active, and select 'select features by area' or single click from the toolbar.
 -   Manually select the roads to remove.
 
 ![](images/access1_road.png)
 
--   Save these selected features into Geopackage, name it as \'impassable_roads\'.
+-   Save these selected features into Geopackage, name it as 'impassable_roads'.
 
 -   To get the remaining roads, we can use the difference function.
 
--    From the menu bar, go to **Vector -\> Geoprocessing tools -\> Difference**
+-   From the menu bar, go to **Vector -\> Geoprocessing tools -\> Difference**
 
 ![](images/acess_21_diff_path.png)
 
 -   A dialogue box pops up.
 
--   For the input layer, select \'roads_network\'.
+-   For the input layer, select 'roads_network'.
 
--   For the overlay layer, select \'impassable_roads\'.
+-   For the overlay layer, select 'impassable_roads'.
 
 -   Leave the rest of the fields as default.
 
@@ -91,11 +86,9 @@ editor: visual
 
 -   A temporary difference layer will be created with the remaining roads.
 
--   Export and save the layer as geopackage. Rename it as \'remaining_acc_roads\'.
+-   Export and save the layer as geopackage. Rename it as 'remaining_acc_roads'.
 
-\
-
-### **2.0 CREATING BUFFER SERVICE AREA**
+### 1.1 Creating Buffer Service Area
 
 -   From the menu bar, go to **Vector -\> Geoprocessing tools -\> Buffer**
 
@@ -104,7 +97,7 @@ editor: visual
 
 -   A dialogue box pops up.
 
--   For the input layer, select \'evacuation_shelters_before flood\'.
+-   For the input layer, select 'evacuation_shelters_before flood'.
 
 -   Leave the rest of the fields as default.
 
@@ -114,7 +107,7 @@ editor: visual
 
 -   A new temporary buffer layer will be created.
 
--   Save it as a geopackage layer and rename it as \'buffer_area_evac_centre\'
+-   Save it as a geopackage layer and rename it as 'buffer_area_evac_centre'
 
 -   Go to the symbology tab and lower the opacity to 50% so that it will not block the view of the accessibility maps.
 
@@ -122,15 +115,15 @@ editor: visual
 
 \
 
-### **2.1 MERGING POTENTIAL AND EXISTING SITES TO ANALYSE FUTURE MEASURES** 
+### 1.2 Merging Potential and Existing Sites To Analyse Future Measures
 
--   Right click on \'edu_slope_elevation_model\' and go to the attribute table.
+-   Right click on 'edu_slope_elevation_model' and go to the attribute table.
 
 -   From the menu bar of the attribute table, click on Select Features using an Expression  icon.
 
--   Inside the expression box, go to \'Fields and Values\' and double click on \'Final def\'.
+-   Inside the expression box, go to 'Fields and Values' and double click on 'Final def'.
 
--   Click on \'=\' sign and select \'High elevation, Mid slope\' found on the all values dialogue box.
+-   Click on '=' sign and select 'High elevation, Mid slope' found on the all values dialogue box.
 
 -   Exclude all values with low slope/low elevation.
 
@@ -140,7 +133,7 @@ editor: visual
 
 ![](images/access_21_expression.png)
 
--   Again, save these selected features into Geopackage, name it as \'edu_potential_sites\'.
+-   Again, save these selected features into Geopackage, name it as 'edu_potential_sites'.
 
 -   Now we will merge it with the existing facilities.
 
@@ -148,13 +141,13 @@ editor: visual
 
 ![](images/access_21_union_path.png)
 
-#  ![](images/union_final.png)
+![](images/union_final.png)
 
 -   A dialogue box pops up.
 
--   For the input layer, select \'edu_potential_sites\'.
+-   For the input layer, select 'edu_potential_sites'.
 
--   For the overlay layer, select \'evacuation_shelters_before_flood\'.
+-   For the overlay layer, select 'evacuation_shelters_before_flood'.
 
 -   Leave the rest of the fields as default.
 
@@ -162,23 +155,23 @@ editor: visual
 
 -   A new temporary union layer will be created.
 
--   Save it as a geopackage layer and rename it as \'edu_healthcare_facilities - union\'.
+-   Save it as a geopackage layer and rename it as 'edu_healthcare_facilities - union'.
 
 -   With the new layer, refer to above on how to create an iso area using QNEAT3 and buffer service area.
 
--   Rename the layers as \'accessbility_unblocked_roads_future\' and \'buffer_area_w\_potential_sites\'.
+-   Rename the layers as 'accessbility_unblocked_roads_future' and 'buffer_area_w\_potential_sites'.
 
-### **2.1 MEASURING THE DIFFERENCE BETWEEN POTENTIAL AND EXISTING SERVICE AREAS**
+### 1.3 Measuring The Difference Between Potential and Existing Service Areas
 
 -    From the menu bar, go to **Vector -\> Geoprocessing tools -\> Difference**
 
-![](images/acess_21_diff_path.png)
+![](images/acess_21_diff_path.png){width="575"}
 
 -   A dialogue box pops up.
 
--   For the input layer, select \'accessbility_unblocked_roads_future\'.
+-   For the input layer, select 'accessbility_unblocked_roads_future'.
 
--   For the overlay layer, select \'accessbility_of_unblocked_roads\'.
+-   For the overlay layer, select 'accessbility_of_unblocked_roads'.
 
 -   Leave the rest of the fields as default.
 
@@ -188,6 +181,6 @@ editor: visual
 
 -   A new temporary difference layer will be created.
 
--   Save it as a geopackage layer and rename it as \'expanded_potential_sites - difference\'.
+-   Save it as a geopackage layer and rename it as 'expanded_potential_sites - difference'.
 
 ![](images/access_last.png){width="549"}

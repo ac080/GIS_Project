@@ -12,7 +12,7 @@ website:
         menu:
         - datacollection.qmd
         - datapreparation.qmd
-        - chloropleth.qmd
+        - potential_sites.qmd
         - accessibility.qmd
       - href: results.qmd
         text: Results & Discussion

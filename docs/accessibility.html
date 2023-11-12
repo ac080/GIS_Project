@@ -87,8 +87,8 @@ ul.task-list{list-style: none;}
  <span class="dropdown-text">Data Preparation</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./chloropleth.html">
- <span class="dropdown-text">Preparation of Chloropleth Map</span></a>
+    <a class="dropdown-item" href="./potential_sites.html">
+ <span class="dropdown-text">Preparing and Identifying of Potential Sites</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="./accessibility.html">
@@ -120,13 +120,10 @@ ul.task-list{list-style: none;}
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#creating-accessibility-maps-using-qneat3-plugin" id="toc-creating-accessibility-maps-using-qneat3-plugin" class="nav-link active" data-scroll-target="#creating-accessibility-maps-using-qneat3-plugin"><strong>1. CREATING ACCESSIBILITY MAPS USING QNEAT3 PLUGIN</strong></a></li>
-  <li><a href="#creating-buffer-service-area" id="toc-creating-buffer-service-area" class="nav-link" data-scroll-target="#creating-buffer-service-area"><strong>2.0 CREATING BUFFER SERVICE AREA</strong></a></li>
-  <li><a href="#merging-potential-and-existing-sites-to-analyse-future-measures" id="toc-merging-potential-and-existing-sites-to-analyse-future-measures" class="nav-link" data-scroll-target="#merging-potential-and-existing-sites-to-analyse-future-measures"><strong>2.1 MERGING POTENTIAL AND EXISTING SITES TO ANALYSE FUTURE MEASURES</strong></a></li>
-  <li><a href="#section" id="toc-section" class="nav-link" data-scroll-target="#section"><img src="images/union_final.png" class="img-fluid"></a>
-  <ul class="collapse">
-  <li><a href="#measuring-the-difference-between-potential-and-existing-service-areas" id="toc-measuring-the-difference-between-potential-and-existing-service-areas" class="nav-link" data-scroll-target="#measuring-the-difference-between-potential-and-existing-service-areas"><strong>2.1 MEASURING THE DIFFERENCE BETWEEN POTENTIAL AND EXISTING SERVICE AREAS</strong></a></li>
-  </ul></li>
+  <li><a href="#creating-accessibility-maps-using-qneat3-plugin" id="toc-creating-accessibility-maps-using-qneat3-plugin" class="nav-link active" data-scroll-target="#creating-accessibility-maps-using-qneat3-plugin">1. Creating Accessibility Maps Using QNEAT3 Plugin</a></li>
+  <li><a href="#creating-buffer-service-area" id="toc-creating-buffer-service-area" class="nav-link" data-scroll-target="#creating-buffer-service-area">1.1 Creating Buffer Service Area</a></li>
+  <li><a href="#merging-potential-and-existing-sites-to-analyse-future-measures" id="toc-merging-potential-and-existing-sites-to-analyse-future-measures" class="nav-link" data-scroll-target="#merging-potential-and-existing-sites-to-analyse-future-measures">1.2 Merging Potential and Existing Sites To Analyse Future Measures</a></li>
+  <li><a href="#measuring-the-difference-between-potential-and-existing-service-areas" id="toc-measuring-the-difference-between-potential-and-existing-service-areas" class="nav-link" data-scroll-target="#measuring-the-difference-between-potential-and-existing-service-areas">1.3 Measuring The Difference Between Potential and Existing Service Areas</a></li>
   </ul>
 </nav>
     </div>
@@ -150,28 +147,24 @@ ul.task-list{list-style: none;}
 </header>
 
 <section id="creating-accessibility-maps-using-qneat3-plugin" class="level3">
-<h3 class="anchored" data-anchor-id="creating-accessibility-maps-using-qneat3-plugin"><strong>1. CREATING ACCESSIBILITY MAPS USING QNEAT3 PLUGIN</strong></h3>
+<h3 class="anchored" data-anchor-id="creating-accessibility-maps-using-qneat3-plugin">1. Creating Accessibility Maps Using QNEAT3 Plugin</h3>
 <ul>
-<li>From the menu bar, go to <strong>Processing -&gt; Toolbox</strong></li>
-</ul>
+<li><p>From the menu bar, go to <strong>Processing -&gt; Toolbox</strong></p>
 <p><br>
-<img src="images/iso_toolbox.png" class="img-fluid"></p>
-<ul>
+<img src="images/iso_toolbox.png" class="img-fluid"></p></li>
 <li><p>A dialogue box pops up.</p></li>
-<li><p>Type 'Iso Areas as Polygons (From Layer)' and select it.&nbsp;</p></li>
-</ul>
+<li><p>Type ‘Iso Areas as Polygons (From Layer)’ and select it.&nbsp;</p>
 <p><br>
-<img src="images/access1_iso.png" class="img-fluid" width="345"></p>
-<ul>
+<img src="images/access1_iso.png" class="img-fluid" width="345"></p></li>
 <li><p>For Vector layer representing network, select the road layer that is unblocked (before flood) roads_derna_final</p></li>
 <li><p>For Start points, select evacuation_shelters_before_flood</p></li>
 </ul>
 <p><img src="images/access1_isowindow.png" class="img-fluid"></p>
 <ul>
 <li><p>For Direction field, select oneway</p></li>
-<li><p>For Value for Forward direction, type in 'F'</p></li>
-<li><p>For Value for Backward direction, type in 'T'</p></li>
-<li><p>For Value for Both directions, type in 'B'</p></li>
+<li><p>For Value for Forward direction, type in ‘F’</p></li>
+<li><p>For Value for Backward direction, type in ‘T’</p></li>
+<li><p>For Value for Both directions, type in ‘B’</p></li>
 <li><p>Leave the rest of the fields Default.</p></li>
 <li><p>Click Run.</p></li>
 </ul>
@@ -179,13 +172,13 @@ ul.task-list{list-style: none;}
 <ul>
 <li><p>A new temporary Output polygon layer will be created in the layer panel.</p></li>
 <li><p>In order to save the new layer, we need to GeoPackage the layer</p></li>
-<li><p>We can save the features by <strong>Export &gt; Save Selected Features As</strong> and create a new Geopackage layer. Remember to change the CRS projection to EPSG: 32634. For the file save it as 'Accessibility_before_flood'.</p></li>
+<li><p>We can save the features by <strong>Export &gt; Save Selected Features As</strong> and create a new Geopackage layer. Remember to change the CRS projection to EPSG: 32634. For the file save it as ‘Accessibility_before_flood’.</p></li>
 </ul>
 <p><img src="images/acess1_map_before.png" class="img-fluid"></p>
 <ul>
 <li><p>Now we have to categorise the iso areas by distance.</p></li>
 <li><p>Right click on the layer and go to Properties.</p></li>
-<li><p>Select the Symbology Tab. Change to Graduated symbol, and the value to Cost Level. Change the mode to 'Natural Breaks (Jenks)', where the class breaks are created in a way that best groups similar values together, therefore maximising the differences between classes for more distinct visualisation. Click on Classify and select OK to close.</p></li>
+<li><p>Select the Symbology Tab. Change to Graduated symbol, and the value to Cost Level. Change the mode to ‘Natural Breaks (Jenks)’, where the class breaks are created in a way that best groups similar values together, therefore maximising the differences between classes for more distinct visualisation. Click on Classify and select OK to close.</p></li>
 </ul>
 <p><img src="images/access1_symbology.png" class="img-fluid" width="512"></p>
 <ul>
@@ -193,39 +186,33 @@ ul.task-list{list-style: none;}
 </ul>
 <p><img src="images/result_before_flood.png" class="img-fluid"></p>
 <ul>
-<li>Repeat the steps to create a map for Accessibility_of_unblocked_roads. The road layer to be used will now be 'remaining_acc_roads' (which are roads that are unblocked post flood) and start points will still remain the same.</li>
-</ul>
-<p><br>
-</p>
-<ul>
-<li><p>To obtain the layer on unblocked roads post flood, we have to manually remove the blocked roads from what we have researched.</p></li>
-<li><p>To do so, click on the roads layer to make it active, and select 'select features by area' or single click from the toolbar.</p></li>
-<li><p>Manually select the roads to remove.</p></li>
+<li>Repeat the steps to create a map for Accessibility_of_unblocked_roads. The road layer to be used will now be ‘remaining_acc_roads’ (which are roads that are unblocked post flood) and start points will still remain the same.</li>
+<li>To obtain the layer on unblocked roads post flood, we have to manually remove the blocked roads from what we have researched.</li>
+<li>To do so, click on the roads layer to make it active, and select ‘select features by area’ or single click from the toolbar.</li>
+<li>Manually select the roads to remove.</li>
 </ul>
 <p><img src="images/access1_road.png" class="img-fluid"></p>
 <ul>
-<li><p>Save these selected features into Geopackage, name it as 'impassable_roads'.</p></li>
+<li><p>Save these selected features into Geopackage, name it as ‘impassable_roads’.</p></li>
 <li><p>To get the remaining roads, we can use the difference function.</p></li>
-<li><p>&nbsp;From the menu bar, go to <strong>Vector -&gt; Geoprocessing tools -&gt; Difference</strong></p></li>
+<li><p>From the menu bar, go to <strong>Vector -&gt; Geoprocessing tools -&gt; Difference</strong></p></li>
 </ul>
 <p><img src="images/acess_21_diff_path.png" class="img-fluid"></p>
 <ul>
 <li><p>A dialogue box pops up.</p></li>
-<li><p>For the input layer, select 'roads_network'.</p></li>
-<li><p>For the overlay layer, select 'impassable_roads'.</p></li>
+<li><p>For the input layer, select ‘roads_network’.</p></li>
+<li><p>For the overlay layer, select ‘impassable_roads’.</p></li>
 <li><p>Leave the rest of the fields as default.</p></li>
 <li><p>Click Run.</p></li>
 </ul>
 <p><img src="images/diff_window.png" class="img-fluid"></p>
 <ul>
 <li><p>A temporary difference layer will be created with the remaining roads.</p></li>
-<li><p>Export and save the layer as geopackage. Rename it as 'remaining_acc_roads'.</p></li>
+<li><p>Export and save the layer as geopackage. Rename it as ‘remaining_acc_roads’.</p></li>
 </ul>
-<p><br>
-</p>
 </section>
 <section id="creating-buffer-service-area" class="level3">
-<h3 class="anchored" data-anchor-id="creating-buffer-service-area"><strong>2.0 CREATING BUFFER SERVICE AREA</strong></h3>
+<h3 class="anchored" data-anchor-id="creating-buffer-service-area">1.1 Creating Buffer Service Area</h3>
 <ul>
 <li>From the menu bar, go to <strong>Vector -&gt; Geoprocessing tools -&gt; Buffer</strong></li>
 </ul>
@@ -234,14 +221,14 @@ ul.task-list{list-style: none;}
 </p>
 <ul>
 <li><p>A dialogue box pops up.</p></li>
-<li><p>For the input layer, select 'evacuation_shelters_before flood'.</p></li>
+<li><p>For the input layer, select ‘evacuation_shelters_before flood’.</p></li>
 <li><p>Leave the rest of the fields as default.</p></li>
 <li><p>Click Run.</p></li>
 </ul>
 <p><img src="images/access_20_buffer.png" class="img-fluid"></p>
 <ul>
 <li><p>A new temporary buffer layer will be created.</p></li>
-<li><p>Save it as a geopackage layer and rename it as 'buffer_area_evac_centre'</p></li>
+<li><p>Save it as a geopackage layer and rename it as ‘buffer_area_evac_centre’</p></li>
 <li><p>Go to the symbology tab and lower the opacity to 50% so that it will not block the view of the accessibility maps.</p></li>
 </ul>
 <p><img src="images/buffer_symbo.png" class="img-fluid" width="415"></p>
@@ -249,59 +236,57 @@ ul.task-list{list-style: none;}
 </p>
 </section>
 <section id="merging-potential-and-existing-sites-to-analyse-future-measures" class="level3">
-<h3 class="anchored" data-anchor-id="merging-potential-and-existing-sites-to-analyse-future-measures"><strong>2.1 MERGING POTENTIAL AND EXISTING SITES TO ANALYSE FUTURE MEASURES</strong></h3>
+<h3 class="anchored" data-anchor-id="merging-potential-and-existing-sites-to-analyse-future-measures">1.2 Merging Potential and Existing Sites To Analyse Future Measures</h3>
 <ul>
-<li><p>Right click on 'edu_slope_elevation_model' and go to the attribute table.</p></li>
+<li><p>Right click on ‘edu_slope_elevation_model’ and go to the attribute table.</p></li>
 <li><p>From the menu bar of the attribute table, click on Select Features using an Expression&nbsp; icon.</p></li>
-<li><p>Inside the expression box, go to 'Fields and Values' and double click on 'Final def'.</p></li>
-<li><p>Click on '=' sign and select 'High elevation, Mid slope' found on the all values dialogue box.</p></li>
+<li><p>Inside the expression box, go to ‘Fields and Values’ and double click on ‘Final def’.</p></li>
+<li><p>Click on ‘=’ sign and select ‘High elevation, Mid slope’ found on the all values dialogue box.</p></li>
 <li><p>Exclude all values with low slope/low elevation.</p></li>
 <li><p>Follow the screenshot below on which values to select.&nbsp;</p></li>
 <li><p>Click on the select features button.</p></li>
 </ul>
 <p><img src="images/access_21_expression.png" class="img-fluid"></p>
 <ul>
-<li><p>Again, save these selected features into Geopackage, name it as 'edu_potential_sites'.</p></li>
+<li><p>Again, save these selected features into Geopackage, name it as ‘edu_potential_sites’.</p></li>
 <li><p>Now we will merge it with the existing facilities.</p></li>
 <li><p>&nbsp;From the menu bar, go to <strong>Vector -&gt; Geoprocessing tools -&gt; Union</strong></p></li>
 </ul>
 <p><img src="images/access_21_union_path.png" class="img-fluid"></p>
-</section>
-<section id="section" class="level1">
-<h1><img src="images/union_final.png" class="img-fluid"></h1>
+<p><img src="images/union_final.png" class="img-fluid"></p>
 <ul>
 <li><p>A dialogue box pops up.</p></li>
-<li><p>For the input layer, select 'edu_potential_sites'.</p></li>
-<li><p>For the overlay layer, select 'evacuation_shelters_before_flood'.</p></li>
+<li><p>For the input layer, select ‘edu_potential_sites’.</p></li>
+<li><p>For the overlay layer, select ‘evacuation_shelters_before_flood’.</p></li>
 <li><p>Leave the rest of the fields as default.</p></li>
 <li><p>Click Run.</p></li>
 <li><p>A new temporary union layer will be created.</p></li>
-<li><p>Save it as a geopackage layer and rename it as 'edu_healthcare_facilities - union'.</p></li>
+<li><p>Save it as a geopackage layer and rename it as ‘edu_healthcare_facilities - union’.</p></li>
 <li><p>With the new layer, refer to above on how to create an iso area using QNEAT3 and buffer service area.</p></li>
-<li><p>Rename the layers as 'accessbility_unblocked_roads_future' and 'buffer_area_w_potential_sites'.</p></li>
+<li><p>Rename the layers as ‘accessbility_unblocked_roads_future’ and ‘buffer_area_w_potential_sites’.</p></li>
 </ul>
+</section>
 <section id="measuring-the-difference-between-potential-and-existing-service-areas" class="level3">
-<h3 class="anchored" data-anchor-id="measuring-the-difference-between-potential-and-existing-service-areas"><strong>2.1 MEASURING THE DIFFERENCE BETWEEN POTENTIAL AND EXISTING SERVICE AREAS</strong></h3>
+<h3 class="anchored" data-anchor-id="measuring-the-difference-between-potential-and-existing-service-areas">1.3 Measuring The Difference Between Potential and Existing Service Areas</h3>
 <ul>
 <li>&nbsp;From the menu bar, go to <strong>Vector -&gt; Geoprocessing tools -&gt; Difference</strong></li>
 </ul>
-<p><img src="images/acess_21_diff_path.png" class="img-fluid"></p>
+<p><img src="images/acess_21_diff_path.png" class="img-fluid" width="575"></p>
 <ul>
 <li><p>A dialogue box pops up.</p></li>
-<li><p>For the input layer, select 'accessbility_unblocked_roads_future'.</p></li>
-<li><p>For the overlay layer, select 'accessbility_of_unblocked_roads'.</p></li>
+<li><p>For the input layer, select ‘accessbility_unblocked_roads_future’.</p></li>
+<li><p>For the overlay layer, select ‘accessbility_of_unblocked_roads’.</p></li>
 <li><p>Leave the rest of the fields as default.</p></li>
 <li><p>Click Run.</p></li>
 </ul>
 <p><img src="images/access_21_create.png" class="img-fluid"></p>
 <ul>
 <li><p>A new temporary difference layer will be created.</p></li>
-<li><p>Save it as a geopackage layer and rename it as 'expanded_potential_sites - difference'.</p></li>
+<li><p>Save it as a geopackage layer and rename it as ‘expanded_potential_sites - difference’.</p></li>
 </ul>
 <p><img src="images/access_last.png" class="img-fluid" width="549"></p>
 
 
-</section>
 </section>
 
 </main> <!-- /main -->
