@@ -15,7 +15,7 @@ website:
         - chloropleth.qmd
         - accessibility.qmd
       - href: results.qmd
-        text: Restuls & Discussion
+        text: Results & Discussion
       - href: about.qmd
         text: About
 
