@@ -7,15 +7,15 @@ editor: visual
 
 Before you can start to perform any analysis, you need to load all the appropriate GIS data into QGIS.
 
--     Start a new project on QGIS
+-   Start a new project on QGIS
 
--     From the Browser pane, click on all the layers you downloaded and plan to use.
+-   From the Browser pane, click on all the layers you downloaded and plan to use.
 
 ### 1.1 Clipping All Appropriate Layers From Libya To Derna City
 
--   ·       This can be done using the clip function in QGIS.
+-   This can be done using the clip function in QGIS.
 
--   ·       From the menu bar, select Vector \> Geoprocessing Tools \> Clip.
+-   From the menu bar, select Vector \> Geoprocessing Tools \> Clip.
 
 ![](images/clip_path.png)
 
@@ -34,7 +34,7 @@ Before you can start to perform any analysis, you need to load all the appropria
 ```{=html}
 <!-- -->
 ```
--    A temporary clipped layer will be created on your layer panel. 
+-   A temporary clipped layer will be created on your layer panel. 
 
 -   Now we are going to save the layers in a GeoPackage database.
 
@@ -77,15 +77,13 @@ We will now perform the same action for the raster layers of Derna city\'s land 
 
 ![](images/chloro_11_raster_extent.png){width="618"}
 
--   
-
 -   Click Run.
 
 -   A temporary Clipped (raster) layer will be created.
 
 -   Export and save the layer as a Geopackage. Remember to change the CRS projection. Rename the layer to \'elevation model\'
 
--   Before you move on to the next section, remember to remove the raw and temporary layers. 
+-   Before you move on to the next section, remember to remove the raw and temporary layers.
 
 ### 1.2 Extracting Specific Features From Each Layer
 
@@ -101,7 +99,7 @@ We will now perform the same action for the raster layers of Derna city\'s land 
 
 -   Now, we can save the features by **Export \> Save Selected Features As** and create a new Geopackage layer. Remember to change all CRS projection to EPSG: 32634.
 
--   Now, we can do the same for all the remaining layers. Eg. for the Hotosm_lby_buildings layer, we will only extract residential areas, as for the OSM buildings layer, we will extract emergency centres and medical facilities. 
+-   Now, we can do the same for all the remaining layers. Eg. for the Hotosm_lby_buildings layer, we will only extract residential areas, as for the OSM buildings layer, we will extract emergency centres and medical facilities.
 
 -   You can refer to the screenshots below on what to extract.
 
@@ -135,7 +133,7 @@ A new temporary merged layer is created and it needs to be saved into a GeoPacka
 
 -   We can save the features by **Export \> Save Selected Features As** and create a new Geopackage layer. Remember to change all CRS projection to EPSG: 32634. Save it into a new file \"existing_shelters_before_flood\"
 
-Repeat the steps to merge the education layer on its own. GeoPackage the layer and name it \'education\_
+Repeat the steps to merge the education layer on its own. GeoPackage the layer and name it \'education'
 
 ### 1.4 Creating Centroid Layer of Existing Shelters Layer
 
@@ -143,7 +141,7 @@ Repeat the steps to merge the education layer on its own. GeoPackage the layer a
 
 ![](images/chloro_centrod1.png)
 
--   Select emergency_healthcare_merged in the pop-up dialogue and click run. 
+-   Select emergency_healthcare_merged in the pop-up dialogue and click run.
 
 ![](images/chloro_14_centroid2.png){width="454"}
 
@@ -173,13 +171,13 @@ In order to save the newly computed Slope layer, we need to GeoPackage it.
 
 Right click on the Slope layer click on Export select Save As...
 
-·  	Make sure that the format is Geopackage and select the Browse button at the File Name
+-   Make sure that the format is Geopackage and select the Browse button at the File Name
 
-·  	When inside the Geopackage file, create a new \'Slope\' file and click on the save button
+-   When inside the Geopackage file, create a new \'Slope\' file and click on the save button
 
-·  	At the Layer input, indicate \"Slope\"
+-   At the Layer input, indicate \"Slope\"
 
-·  	At the CRS, click on the drop-down button and click on EPSG: 32634
+-   At the CRS, click on the drop-down button and click on EPSG: 32634
 
 ![](images/chloro_15_.png){width="354"}
 
@@ -196,7 +194,6 @@ Firstly, we need to download a plugin. At the menu bar, select Plugins \> Manage
 After the plugin is installed, close the dialog window
 
 \
-
 Ensure that only the education layer and slope raster layer are selected in the layers panel.
 
 -   Select Plugins \> Analyses \> Point Sampling Tool
@@ -207,13 +204,11 @@ Ensure that only the education layer and slope raster layer are selected in the 
 
 -   At the \'Output point vector layer\', select on the Browse button
 
--   Head to the GeoPackage folder and name the new file as \'Slope_education\'\'
+-   Head to the GeoPackage folder and name the new file as \'Slope_education\'
 
 ![](images/pointsampling.png){width="340"}
 
 -   A new point layer will be created
-
-\
 
 Repeat the same process to integrate the slope degree into the point layer. Instead of using the education layer and elevation raster layer, use the Slope_education and elevation level layer. Name the new layer \'edu_slope_elevation_model\'. After this, remove the Slope_education layer.
 

@@ -1,0 +1,8 @@
+---
+title: "Poster"
+editor: visual
+---
+
+This is our team's poster.
+
+![](images/GIS%20Project.png)

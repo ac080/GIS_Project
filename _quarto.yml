@@ -18,16 +18,14 @@ website:
         text: Results & Discussion
       - href: lessons.qmd
         text: Lessons Learnt
-#      - text: "Webmaps"
-#        menu:
-#       - text: "Potential Sites For Future Flood Events"
-#         href: /Potential_Sites_For_Future_Flood_Events/index.html
+      - href: poster.qmd
+        text: Poster
       - href: about.qmd
         text: About
 
 format:
   html:
-    theme: cosmo
+    theme: minty
     css: styles.css
     toc: true
 

@@ -157,7 +157,7 @@ editor: visual
 
 -   Save it as a geopackage layer and rename it as 'edu_healthcare_facilities - union'.
 
--   With the new layer, refer to above on how to create an iso area using QNEAT3 and buffer service area.
+-   With the new layer, refer to above on how to create an ISO area using QNEAT3 and buffer service area.
 
 -   Rename the layers as 'accessbility_unblocked_roads_future' and 'buffer_area_w\_potential_sites'.
 

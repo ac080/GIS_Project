@@ -103,6 +103,9 @@ ul.task-list{list-style: none;}
     <a class="nav-link" href="./lessons.html">Lessons Learnt</a>
   </li>  
   <li class="nav-item">
+    <a class="nav-link" href="./poster.html">Poster</a>
+  </li>  
+  <li class="nav-item">
     <a class="nav-link" href="./about.html">About</a>
   </li>  
 </ul>
@@ -155,15 +158,15 @@ ul.task-list{list-style: none;}
 <h3 class="anchored" data-anchor-id="loading-the-gis-data">1. Loading the GIS Data</h3>
 <p>Before you can start to perform any analysis, you need to load all the appropriate GIS data into QGIS.</p>
 <ul>
-<li><p>&nbsp;&nbsp;Start a new project on QGIS</p></li>
-<li><p>&nbsp;&nbsp;From the Browser pane, click on all the layers you downloaded and plan to use.</p></li>
+<li><p>Start a new project on QGIS</p></li>
+<li><p>From the Browser pane, click on all the layers you downloaded and plan to use.</p></li>
 </ul>
 </section>
 <section id="clipping-all-appropriate-layers-from-libya-to-derna-city" class="level3">
 <h3 class="anchored" data-anchor-id="clipping-all-appropriate-layers-from-libya-to-derna-city">1.1 Clipping All Appropriate Layers From Libya To Derna City</h3>
 <ul>
-<li><p>· &nbsp; &nbsp; &nbsp; This can be done using the clip function in QGIS.</p></li>
-<li><p>· &nbsp; &nbsp; &nbsp; From the menu bar, select Vector &gt; Geoprocessing Tools &gt; Clip.</p></li>
+<li><p>This can be done using the clip function in QGIS.</p></li>
+<li><p>From the menu bar, select Vector &gt; Geoprocessing Tools &gt; Clip.</p></li>
 </ul>
 <p><img src="images/clip_path.png" class="img-fluid"></p>
 <p><br>
@@ -181,7 +184,7 @@ ul.task-list{list-style: none;}
 </ul>
 <!-- -->
 <ul>
-<li><p>&nbsp;A temporary clipped layer will be created on your layer panel.&nbsp;</p></li>
+<li><p>A temporary clipped layer will be created on your layer panel.&nbsp;</p></li>
 <li><p>Now we are going to save the layers in a GeoPackage database.</p>
 <ul>
 <li>Create a new sub-folder called GeoPackage and use the export feature by right clicking the clipped layers and save features as geopackage.</li>
@@ -225,11 +228,10 @@ ul.task-list{list-style: none;}
 </ul>
 <p><img src="images/chloro_11_raster_extent.png" class="img-fluid" width="618"></p>
 <ul>
-<li></li>
 <li><p>Click Run.</p></li>
 <li><p>A temporary Clipped (raster) layer will be created.</p></li>
 <li><p>Export and save the layer as a Geopackage. Remember to change the CRS projection. Rename the layer to 'elevation model'</p></li>
-<li><p>Before you move on to the next section, remember to remove the raw and temporary layers.&nbsp;</p></li>
+<li><p>Before you move on to the next section, remember to remove the raw and temporary layers.</p></li>
 </ul>
 </section>
 <section id="extracting-specific-features-from-each-layer" class="level3">
@@ -241,7 +243,7 @@ ul.task-list{list-style: none;}
 <p><img src="images/amenity.png" class="img-fluid"></p></li>
 <li><p>Click on the <strong>Select Features</strong> button.</p></li>
 <li><p>Now, we can save the features by <strong>Export &gt; Save Selected Features As</strong> and create a new Geopackage layer. Remember to change all CRS projection to EPSG: 32634.</p></li>
-<li><p>Now, we can do the same for all the remaining layers. Eg. for the Hotosm_lby_buildings layer, we will only extract residential areas, as for the OSM buildings layer, we will extract emergency centres and medical facilities.&nbsp;</p></li>
+<li><p>Now, we can do the same for all the remaining layers. Eg. for the Hotosm_lby_buildings layer, we will only extract residential areas, as for the OSM buildings layer, we will extract emergency centres and medical facilities.</p></li>
 <li><p>You can refer to the screenshots below on what to extract.</p>
 <p><img src="images/chloro_12_type.png" class="img-fluid"></p>
 <p><img src="images/chloro_12_building.png" class="img-fluid"></p></li>
@@ -267,7 +269,7 @@ ul.task-list{list-style: none;}
 <ul>
 <li>We can save the features by <strong>Export &gt; Save Selected Features As</strong> and create a new Geopackage layer. Remember to change all CRS projection to EPSG: 32634. Save it into a new file "existing_shelters_before_flood"</li>
 </ul>
-<p>Repeat the steps to merge the education layer on its own. GeoPackage the layer and name it 'education_</p>
+<p>Repeat the steps to merge the education layer on its own. GeoPackage the layer and name it 'education’</p>
 </section>
 <section id="creating-centroid-layer-of-existing-shelters-layer" class="level3">
 <h3 class="anchored" data-anchor-id="creating-centroid-layer-of-existing-shelters-layer">1.4 Creating Centroid Layer of Existing Shelters Layer</h3>
@@ -276,7 +278,7 @@ ul.task-list{list-style: none;}
 </ul>
 <p><img src="images/chloro_centrod1.png" class="img-fluid"></p>
 <ul>
-<li>Select emergency_healthcare_merged in the pop-up dialogue and click run.&nbsp;</li>
+<li>Select emergency_healthcare_merged in the pop-up dialogue and click run.</li>
 </ul>
 <p><img src="images/chloro_14_centroid2.png" class="img-fluid" width="454"></p>
 <ul>
@@ -302,10 +304,12 @@ ul.task-list{list-style: none;}
 <p>When the computation is completed, a temporary layer called Slope will be added. Click on Close button to close Slope function dialog window.</p>
 <p>In order to save the newly computed Slope layer, we need to GeoPackage it.</p>
 <p>Right click on the Slope layer click on Export select Save As…</p>
-<p>·&nbsp; Make sure that the format is Geopackage and select the Browse button at the File Name</p>
-<p>·&nbsp; When inside the Geopackage file, create a new 'Slope' file and click on the save button</p>
-<p>·&nbsp; At the Layer input, indicate "Slope"</p>
-<p>·&nbsp; At the CRS, click on the drop-down button and click on EPSG: 32634</p>
+<ul>
+<li><p>Make sure that the format is Geopackage and select the Browse button at the File Name</p></li>
+<li><p>When inside the Geopackage file, create a new 'Slope' file and click on the save button</p></li>
+<li><p>At the Layer input, indicate "Slope"</p></li>
+<li><p>At the CRS, click on the drop-down button and click on EPSG: 32634</p></li>
+</ul>
 <p><img src="images/chloro_15_.png" class="img-fluid" width="354"></p>
 <p>Remove the temporary Slope layer by doing the steps mentioned above.<br>
 </p>
@@ -319,21 +323,18 @@ ul.task-list{list-style: none;}
 </ul>
 <p>After the plugin is installed, close the dialog window</p>
 <p><br>
-</p>
-<p>Ensure that only the education layer and slope raster layer are selected in the layers panel.</p>
+Ensure that only the education layer and slope raster layer are selected in the layers panel.</p>
 <ul>
 <li><p>Select Plugins &gt; Analyses &gt; Point Sampling Tool</p></li>
 <li><p>In the 'Layers with fields/bands to get values from:', scroll down till you see the slope raster layer</p></li>
 <li><p>Click on it</p></li>
 <li><p>At the 'Output point vector layer', select on the Browse button</p></li>
-<li><p>Head to the GeoPackage folder and name the new file as 'Slope_education''</p></li>
+<li><p>Head to the GeoPackage folder and name the new file as 'Slope_education'</p></li>
 </ul>
 <p><img src="images/pointsampling.png" class="img-fluid" width="340"></p>
 <ul>
 <li>A new point layer will be created</li>
 </ul>
-<p><br>
-</p>
 <p>Repeat the same process to integrate the slope degree into the point layer. Instead of using the education layer and elevation raster layer, use the Slope_education and elevation level layer. Name the new layer 'edu_slope_elevation_model'. After this, remove the Slope_education layer.</p>
 </section>
 <section id="creating-slope-and-elevation-category-field" class="level3">
