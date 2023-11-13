@@ -14,8 +14,10 @@ website:
         - datapreparation.qmd
         - potential_sites.qmd
         - accessibility.qmd
-      - href: results.qmd
-        text: Results & Discussion
+      - text: Analysis & Results
+        menu:
+        - analysis.qmd
+        - conclusion.qmd
       - href: lessons.qmd
         text: Lessons Learnt
       - href: poster.qmd

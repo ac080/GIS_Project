@@ -1,5 +1,5 @@
 ---
-title: "Results and Discussion"
+title: "Analysis"
 editor: visual
 ---
 
@@ -11,7 +11,7 @@ The following maps shows the accessibility of residential towns to evacuation ce
 
 ![Figure 1: Accessibility of Shelters Before a Flood](images/access_before.png "Figure 1: Accessibility of Shelters Before The Flood")
 
-Prior to the flood, we observe a lack of accessibility of residential areas to emergency services and healthcare facilities. A substantial number of residential towns on the East and West of Derna City are entirely inaccessible to shelters. Moreover, majority of residential towns have access to shelters are situated more than 1km away. This suggests that during an emergency, most residents will have to evacuate to shelters that are more than 1 km away from them (as seen in dark red areas where two other residential towns are found from legend), which is not very ideal.
+Prior to the flood, we observe a lack of accessibility of residential areas to emergency services and healthcare facilities. A substantial number of residential towns on the East and West of Derna City are entirely inaccessible to shelters. Moreover, majority of residential towns that have access to shelters are situated more than 1km away. This suggests that during an emergency, most residents will have to evacuate to shelters that are more than 1 km away from them (as seen in dark red areas where two other residential towns are found from legend), which is not very ideal.
 
 ### 
 
@@ -19,7 +19,7 @@ Prior to the flood, we observe a lack of accessibility of residential areas to e
 
 ![Figure 2: Accessibility of Shelters After The Flood](images/access_map_after_flood.png)
 
-Following a flood, roads are blocked and damaged, leading to a drastic reduction in the accessibility of healthcare and emergency centres compared to Figure 1. There are now fewer highly accessible shelters as compared to Figure 1 (as seen from reduced white areas ). Since the only residential town that falls within the 900m is also within the flooded area, the shelters in that location may have been flooded as well. Hence, the nearest shelter outside the flooded area may be less accessible for the displaced residents there. Additionally, fewer residential towns are now within 2.5 km of a shelter compared to Figure 1.
+Following a flood, roads are blocked and damaged, leading to a drastic reduction in the accessibility of healthcare and emergency centres compared to Figure 1. There are now fewer highly accessible shelters as compared to Figure 1 (as seen from reduced white areas ). Since the only residential town that falls within the 900m is also within the flooded area, the shelters in that location may have been flooded as well. Furthermore, residents who are displaced from the flood have to travel more than 1km to access shelters outside of the flooded area. The blocked roads also resulted in fewer residential towns to fall within 2.5 km of a shelter compared to Figure 1.
 
 ### Buffer Service Area of Shelters After a Flood
 
