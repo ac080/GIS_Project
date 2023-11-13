@@ -155,7 +155,7 @@ editor: visual
 
 -   A new temporary union layer will be created.
 
--   Save it as a geopackage layer and rename it as 'edu_healthcare_facilities - union'.
+-   Save it as a GeoPackage layer and rename it as 'edu_healthcare_facilities - union'.
 
 -   With the new layer, refer to above on how to create an ISO area using QNEAT3 and buffer service area.
 
