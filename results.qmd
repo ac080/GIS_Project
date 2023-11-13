@@ -5,13 +5,15 @@ editor: visual
 
 ## Derna City's Accessibility During a Flood
 
-The following maps shows the accessibility of residential towns to evacuation centres and healthcare facilities. The maps also shows some potential education centres that can be used as a evacuation centres during a disaster.
+The following maps shows the accessibility of residential towns to evacuation centres and healthcare facilities. The maps also shows some potential education centres that can be used as evacuation centres during a disaster.
 
 ### Accessibility of Shelters Before a Flood
 
 ![Figure 1: Accessibility of Shelters Before a Flood](images/access_before.png "Figure 1: Accessibility of Shelters Before The Flood")
 
 Prior to the flood, we observe a lack of accessibility of residential areas to emergency services and healthcare facilities. A substantial number of residential towns on the East and West of Derna City are entirely inaccessible to shelters. Moreover, majority of residential towns have access to shelters are situated more than 1km away. This suggests that during an emergency, most residents will have to evacuate to shelters that are more than 1 km away from them (as seen in dark red areas where two other residential towns are found from legend), which is not very ideal.
+
+### 
 
 ### Accessibility of Shelters After a Flood
 
@@ -44,8 +46,6 @@ In Figure 5, we added the potential sites that could be used as emergency shelte
 This expanded accessibility fosters greater mobility for displaced residents within the flooded area, allowing them to reach alternative shelters. Some parts of the residential towns in the East and West of Derna City also fall within the white areas now, where they previously were in the furthest dark green areas of 2.1 km to 2.5km in Figure 1, and not covered in Figure 2.
 
 The majority of residential areas now have improved access to shelters, resulting in a notable reduction in the vulnerability of these towns during emergency situations.
-
-\
 
 ### Buffer Service Area of Shelters With Potential Sites
 
