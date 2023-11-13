@@ -3,6 +3,8 @@ title: "About"
 editor: visual
 ---
 
+# Welcome! 
+
 We are G1T1, comprising of Anthea and Amanda.
 
-In this website, we share our project findings and insights gained.
+![](images/pic%20of%20us.jpeg){width="513"}

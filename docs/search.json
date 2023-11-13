@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "G1T1: GeoMusketeer",
     "section": "",
-    "text": "Due to the critical situation in Libya due to frequent urban flooding disasters, the government is actively designing strategies to mitigate the damages and aid in disaster recovery and relief to protect its people and economy.\nThis project aims to find out the accessibility of emergency and medical centres to people in order to improve Derna city’s level of preparedness and reduce rescue time. This is done by evaluating whether there are enough emergency facilities in populated areas and whether they are easily accessible."
+    "text": "Due to the frequent urban flooding disasters in Libya, the government is actively designing strategies to mitigate the damages and aid in disaster recovery and relief to protect its people and economy. Yet, insufficient measures are put in placed by the government to prevent it from occurring again.\nThis project aims to find out the accessibility of emergency and medical centres to people in order to improve Derna city’s level of preparedness and reduce rescue time. This is done by evaluating whether there are enough emergency facilities in populated areas and whether they are easily accessible."
   },
   {
     "objectID": "project.html",
@@ -32,14 +32,14 @@
     "href": "about.html",
     "title": "About",
     "section": "",
-    "text": "In this website, we share our project findings and insights gained."
+    "text": "We are G1T1, comprising of Anthea and Amanda."
   },
   {
     "objectID": "datacollection.html",
     "href": "datacollection.html",
     "title": "Data Collection",
     "section": "",
-    "text": "File Name \nDescription\nSource\n\n\n\n\ngis_osm_buildings_a_free_1 \nProvides data on all buildings and building types.\nhttps://download.geofabrik.de/africa/libya-latest-free.shp.zip\n\n\ngis_osm_roads_free_1\nProvides data on all roads and road types.\nhttps://download.geofabrik.de/africa/libya-latest-free.shp.zip\n\n\nDerna_city_250m_hexagon\nAnalytical hexagon that covers area of Derma City\nhttps://data.humdata.org/dataset/250m-hexagonal-gird-over-city-of-derna \n\n\nDEM\nElevation model that covers area of Derna City\nhttps://data.humdata.org/dataset/libya-elevation-model \n\n\nHotosm_lby_buildings - Buildings\nProvides data on all buildings and building types.\nhttps://data.humdata.org/dataset/hotosm_lby_buildings \n\n\nLYB_watrcrsl_rvr_3m_arcworld\nProvides data on all rivers found.\nhttps://data.humdata.org/dataset/river-network-libya-cods \n\n\nHotosm_lby_waterways - Waterways\nProvides data on all major waterways and waterway types.\nhttps://data.humdata.org/dataset/hotosm_lby_waterways \n\n\nHotosm_lby_health_facilities - Health Facilities\nProvides data on all health facilities and health facility types.\nhttps://data.humdata.org/dataset/hotosm_lby_health_facilities \n\n\nhotosm_lby_education_facilities — Education Facilities\nProvides data on all schools and school types.\nhttps://data.humdata.org/dataset/hotosm_lby_education_facilities \n\n\nHotosm_lby_Populated_Places - Populated Places\nProvides data on most populated areas.\nhttps://data.humdata.org/dataset/hotosm_lby_populated_places \n\n\nEMSR696_AOI01_BLP\nProvided the road network that are affected by the flood\nhttps://rapidmapping.emergency.copernicus.eu/EMSR696/download"
+    "text": "File Name \nDescription\nSource\n\n\n\n\ngis_osm_buildings_a_free_1 \nProvides data on all buildings and building types.\nhttps://download.geofabrik.de/africa/libya-latest-free.shp.zip\n\n\ngis_osm_roads_free_1\nProvides data on all roads and road types.\nhttps://download.geofabrik.de/africa/libya-latest-free.shp.zip\n\n\nDerna_city_250m_hexagon\nAnalytical hexagon that covers area of Derma City\nhttps://data.humdata.org/dataset/250m-hexagonal-gird-over-city-of-derna \n\n\nDEM\nElevation model that covers area of Derna City\nhttps://data.humdata.org/dataset/libya-elevation-model \n\n\nHotosm_lby_buildings - Buildings\nProvides data on all buildings and building types.\nhttps://data.humdata.org/dataset/hotosm_lby_buildings \n\n\nLYB_watrcrsl_rvr_3m_arcworld\nProvides data on all rivers found.\nhttps://data.humdata.org/dataset/river-network-libya-cods \n\n\nHotosm_lby_waterways - Waterways\nProvides data on all major waterways and waterway types.\nhttps://data.humdata.org/dataset/hotosm_lby_waterways \n\n\nHotosm_lby_health_facilities - Health Facilities\nProvides data on all health facilities and health facility types.\nhttps://data.humdata.org/dataset/hotosm_lby_health_facilities \n\n\nhotosm_lby_education_facilities — Education Facilities\nProvides data on all schools and school types.\nhttps://data.humdata.org/dataset/hotosm_lby_education_facilities \n\n\nEMSR696_AOI01_BLP\nProvided the road network that are affected by the flood\nhttps://rapidmapping.emergency.copernicus.eu/EMSR696/download"
   },
   {
     "objectID": "datapreparation.html",
