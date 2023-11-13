@@ -14,11 +14,10 @@ website:
         - datapreparation.qmd
         - potential_sites.qmd
         - accessibility.qmd
-      - text: Analysis & Results
+      - text: "Analysis & Results"
         menu:
         - analysis.qmd
         - conclusion.qmd
-        
       - href: lessons.qmd
         text: Lessons Learnt
       - href: poster.qmd
