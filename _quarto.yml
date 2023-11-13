@@ -18,6 +18,7 @@ website:
         menu:
         - analysis.qmd
         - conclusion.qmd
+        
       - href: lessons.qmd
         text: Lessons Learnt
       - href: poster.qmd
