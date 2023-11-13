@@ -7,7 +7,7 @@ website:
   navbar:
     left:
       - href: project.qmd
-        text: Project Proposal
+        text: "Project Proposal"
       - text: "Methodology"
         menu:
         - datacollection.qmd
@@ -19,11 +19,11 @@ website:
         - analysis.qmd
         - conclusion.qmd
       - href: lessons.qmd
-        text: Lessons Learnt
+        text: "Lessons Learnt"
       - href: poster.qmd
-        text: Poster
+        text: "Poster"
       - href: about.qmd
-        text: About
+        text: "About"
 
 format:
   html:
