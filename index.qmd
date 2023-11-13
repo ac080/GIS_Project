@@ -3,7 +3,7 @@ title: "G1T1: GeoMusketeer"
 format: html
 ---
 
-Geomusketeer is a project brought by SMT201: Geographical Information Systems for Urban Planning module, which is supported by Professor Kam Tin Seong from Singapore Management University's School of Computing and Information Systems.
+GeoMusketeer is a project brought by SMT201: Geographical Information Systems for Urban Planning module, which is supported by Professor Kam Tin Seong from Singapore Management University's School of Computing and Information Systems.
 
 Due to the critical situation in Libya due to frequent urban flooding disasters, the government is actively designing strategies to mitigate the damages and aid in disaster recovery and relief to protect its people and economy.
 
