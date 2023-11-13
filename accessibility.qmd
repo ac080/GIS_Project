@@ -45,7 +45,7 @@ editor: visual
 
 ![](images/acess1_map_before.png)
 
--   Now we have to categorise the iso areas by distance.
+-   Now we have to categorise the ISO areas by distance.
 
 -   Right click on the layer and go to Properties.
 
