@@ -6,7 +6,7 @@ editor: visual
 The data sets that were used for this project and their respective sources are stated below:
 
 | File Name                                                | Description                                                       | Source                                                                     |
-|---------------------|------------------------|---------------------------|
+|----------------------------------------------------------|-------------------------------------------------------------------|----------------------------------------------------------------------------|
 | gis_osm_buildings_a\_free_1                              | Provides data on all buildings and building types.                | <https://download.geofabrik.de/africa/libya-latest-free.shp.zip>           |
 | gis_osm_roads_free_1                                     | Provides data on all roads and road types.                        | <https://download.geofabrik.de/africa/libya-latest-free.shp.zip>           |
 | Derna_city_250m_hexagon                                  | Analytical hexagon that covers area of Derma City                 | <https://data.humdata.org/dataset/250m-hexagonal-gird-over-city-of-derna>  |

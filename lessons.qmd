@@ -3,14 +3,6 @@ title: "Lessons Learnt"
 editor: visual
 ---
 
-## Conclusion
-
-In conclusion, the current accessibility of emergency centres and healthcare facilities in Derna City is limited. Although residential towns on the Eastern and Western edges of Derna City experience low accessibility, their exposure to flooding impact is minimal as these areas are situated outside of the flood-prone zones and have higher elevation/slope levels.
-
-Since most residential towns are located within these areas, it can be suggested that most of Derna City's residents are at a lower risk during such flooding events. However, with the worsening floods in Libya coupled with the lack of shelters, these areas will become increasingly vulnerable over time.
-
-In the long term, it is recommended for the government to increase the quantity of emergency centres. It would be advisable to construct these centres in locations with elevated and slope terrain, with a preference for higher elevation, and ensuring accessibility to major residential areas. This is essential in minimising vulnerability during unprecedented flood events when access to emergency services is limited.
-
 ## Considerations
 
 The decision making process for the Libyan government depends on its priorities. Given financial constraints and political debates, the government must decide which is more important in light of the worsening flooding conditions:
@@ -30,6 +22,8 @@ Some possibilities can be explored based on our analysis: 
 -   Building more evacuation centres in areas that are highly accessible to residents so that they are able to reach the area in case of emergencies.
 
 -   Look at how the infrastructure can be improved to prevent the same area from getting flooded each time (post flood analysis, accumulate historical flood event data)
+
+-   Only identify potential sites that have access to drinkable water and food so that residents can sustain themselves during an emergency
 
 -   Real time analysis to show / warn people of potential flooding so that they are able to head to evacuation centres first.
 

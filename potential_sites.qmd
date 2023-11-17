@@ -19,8 +19,6 @@ Before you can start to perform any analysis, you need to load all the appropria
 
 ![](images/clip_path.png)
 
-\
-
 -   Put the input layer as the layer you wish to clip and the Overlay layer as Derna_city_250m_hexagon.
 
 ![](images/chloro_11_clip.png)
@@ -30,15 +28,9 @@ Before you can start to perform any analysis, you need to load all the appropria
 ![](images/chloro_11_donotfilter.png)
 
 -   Click run and close the dialogue once it's done.
-
-```{=html}
-<!-- -->
-```
 -   A temporary clipped layer will be created on your layer panel. 
-
 -   Now we are going to save the layers in a GeoPackage database.
-
-    -   Create a new sub-folder called GeoPackage and use the export feature by right clicking the clipped layers and save features as geopackage.
+    -   Create a new sub-folder called GeoPackage and use the export feature by right clicking the clipped layers and save features as GeoPackage.
 
 ![](images/exporting.png){fig-align="center" width="345"}
 
@@ -56,16 +48,13 @@ Before you can start to perform any analysis, you need to load all the appropria
 
 -   Remove the temporary clipped layer
 
-```{=html}
-<!-- -->
-```
 -   Repeat for the remaining feature layers. 
 
     -   Education, residential, evacuation centres, medical facilities, road network, waterway
 
 \
 
-We will now perform the same action for the raster layers of Derna city\'s land elevation model. 
+We will now perform the same action for the raster layers of Derna city's land elevation model. 
 
 -   From the menu bar, go to **Raster \> Extraction \> Clip Raster by Layer.**
 
@@ -81,7 +70,7 @@ We will now perform the same action for the raster layers of Derna city\'s land 
 
 -   A temporary Clipped (raster) layer will be created.
 
--   Export and save the layer as a Geopackage. Remember to change the CRS projection. Rename the layer to \'elevation model\'
+-   Export and save the layer as a Geopackage. Remember to change the CRS projection. Rename the layer to 'elevation model'
 
 -   Before you move on to the next section, remember to remove the raw and temporary layers.
 
@@ -91,7 +80,7 @@ We will now perform the same action for the raster layers of Derna city\'s land 
 
 -   From the menu bar of the attribute table, click on Select Features using an Expression icon.
 
--   Inside the expression box, select **fields and values \> amenity.** Type in \'=\' and press **All Unique** in the value box on the right. Then double click on \'hospital\', \'doctor\', \'clinic\' as these constitute the medical centres that we are trying to study.
+-   Inside the expression box, select **fields and values \> amenity.** Type in '=' and press **All Unique** in the value box on the right. Then double click on 'hospital', 'doctor', 'clinic' as these constitute the medical centres that we are trying to study.
 
     ![](images/amenity.png)
 
@@ -131,9 +120,9 @@ Firstly, we have to merge all the emergency centres and medical facilities layer
 
 A new temporary merged layer is created and it needs to be saved into a GeoPackage.
 
--   We can save the features by **Export \> Save Selected Features As** and create a new Geopackage layer. Remember to change all CRS projection to EPSG: 32634. Save it into a new file \"existing_shelters_before_flood\"
+-   We can save the features by **Export \> Save Selected Features As** and create a new Geopackage layer. Remember to change all CRS projection to EPSG: 32634. Save it into a new file "existing_shelters_before_flood"
 
-Repeat the steps to merge the education layer on its own. GeoPackage the layer and name it \'education'
+Repeat the steps to merge the education layer on its own. GeoPackage the layer and name it 'education'
 
 ### 1.4 Creating Centroid Layer of Existing Shelters Layer
 
@@ -149,7 +138,7 @@ Repeat the steps to merge the education layer on its own. GeoPackage the layer a
 
 -   In order to save the new layer, we need to GeoPackage the layer
 
--   We can save the features by **Export \> Save Selected Features As** and create a new Geopackage layer. Remember to change the CRS projection to EPSG: 32634. For the file save it as \'emergency_healthcare_centroid\'
+-   We can save the features by **Export \> Save Selected Features As** and create a new Geopackage layer. Remember to change the CRS projection to EPSG: 32634. For the file save it as 'emergency_healthcare_centroid'
 
 ### 1.5 Creating Slope Layer
 
@@ -173,9 +162,9 @@ Right click on the Slope layer click on Export select Save As...
 
 -   Make sure that the format is Geopackage and select the Browse button at the File Name
 
--   When inside the Geopackage file, create a new \'Slope\' file and click on the save button
+-   When inside the Geopackage file, create a new 'Slope' file and click on the save button
 
--   At the Layer input, indicate \"Slope\"
+-   At the Layer input, indicate "Slope"
 
 -   At the CRS, click on the drop-down button and click on EPSG: 32634
 
@@ -187,7 +176,7 @@ Remove the temporary Slope layer by doing the steps mentioned above.\
 
 Firstly, we need to download a plugin. At the menu bar, select Plugins \> Manage and Install Plugins...
 
--   At the search tab, search for \'Point sampling tool\' and click on it
+-   At the search tab, search for 'Point sampling tool' and click on it
 
 -   At the bottom right, click on Install Plugin
 
@@ -198,32 +187,32 @@ Ensure that only the education layer and slope raster layer are selected in the 
 
 -   Select Plugins \> Analyses \> Point Sampling Tool
 
--   In the \'Layers with fields/bands to get values from:\', scroll down till you see the slope raster layer
+-   In the 'Layers with fields/bands to get values from:', scroll down till you see the slope raster layer
 
 -   Click on it
 
--   At the \'Output point vector layer\', select on the Browse button
+-   At the 'Output point vector layer', select on the Browse button
 
--   Head to the GeoPackage folder and name the new file as \'Slope_education\'
+-   Head to the GeoPackage folder and name the new file as 'Slope_education'
 
 ![](images/pointsampling.png){width="340"}
 
 -   A new point layer will be created
 
-Repeat the same process to integrate the slope degree into the point layer. Instead of using the education layer and elevation raster layer, use the Slope_education and elevation level layer. Name the new layer \'edu_slope_elevation_model\'. After this, remove the Slope_education layer.
+Repeat the same process to integrate the slope degree into the point layer. Instead of using the education layer and elevation raster layer, use the Slope_education and elevation level layer. Name the new layer 'edu_slope_elevation_model'. After this, remove the Slope_education layer.
 
 ### 1.7 Creating Slope and Elevation Category Field
 
-To make it easier to visualise which education location is most optimal, we will be creating a \'Low\', \'Mid\' and \'High\' category for both the slope and elevation category.
+To make it easier to visualise which education location is most optimal, we will be creating a 'Low', 'Mid' and 'High' category for both the slope and elevation category.
 
 \
 For the slope category:\
 
--   Right click on the \'edu_slope_elevation_model\' layer \> select Open Attribute Table \> Open field calculator
+-   Right click on the 'edu_slope_elevation_model' layer \> select Open Attribute Table \> Open field calculator
 
 ![](images/chloro_17_slope.png)
 
--   At the Output field name, indicate: \'Slope Level\'
+-   At the Output field name, indicate: 'Slope Level'
 
 -   At the Output field type, click on the drop down icon and indicate Text as the data type
 
@@ -236,7 +225,7 @@ For the slope category:\
 |                                                                                                         |
 | When (  "slope_edu_final.gpkg_Slope" \>= 2.1 and  "slope_edu_final.gpkg_Slope" \< 4.7) THEN 'Low Slope' |
 |                                                                                                         |
-| When (  "slope_edu_final.gpkg_Slope" \>= 4.7) THEN 'Low Slope\'                                         |
+| When (  "slope_edu_final.gpkg_Slope" \>= 4.7) THEN 'Low Slope'                                          |
 |                                                                                                         |
 | END                                                                                                     |
 +---------------------------------------------------------------------------------------------------------+
@@ -249,7 +238,7 @@ For the elevation category:
 
 ![](images/chloro_17_elevation.png)
 
--   Change the Output field name to \'Elevation\'
+-   Change the Output field name to 'Elevation'
 
 -   Copy and paste the following code into the expression input:
 
@@ -271,7 +260,7 @@ After creating both of the categories, we need to create a new category with bot
 
 ![](images/chloro_17_finaldef.png)
 
--   Change the Output field name to \'Final Def\'
+-   Change the Output field name to 'Final Def'
 
 -   Copy and paste the following code into the expression input:
 
@@ -296,7 +285,7 @@ After creating both of the categories, we need to create a new category with bot
 |                                                                                                           |
 | WHEN  ("Elevation" =  'High Elevation' and  "Slope Level" = 'High Slope') THEN 'High elevation/slope'     |
 |                                                                                                           |
-| WHEN \"Slope Level\" IS NULL THEN \"Elevation\"                                                           |
+| WHEN "Slope Level" IS NULL THEN "Elevation"                                                               |
 |                                                                                                           |
 | END                                                                                                       |
 +-----------------------------------------------------------------------------------------------------------+
@@ -315,7 +304,7 @@ We need to create a new layer that excludes areas that are flooded. To do this w
 
 -   For both the layer, click on the Advanced options
 
--   At the Invalid feature filtering, click on the drop down and select \'Do not Filter (Better Performance\', and click on the back button on the top left
+-   At the Invalid feature filtering, click on the drop down and select 'Do not Filter (Better Performance', and click on the back button on the top left
 
 ![](images/symmetrical_diff_input.png){width="401"}
 
@@ -325,6 +314,6 @@ We need to create a new layer that excludes areas that are flooded. To do this w
 
 -   Click on the run button
 
--   A new layer \'Symmetrical difference\' will be created
+-   A new layer 'Symmetrical difference' will be created
 
--   Geopackage this layer to save it. Remember to change the CRS projection to EPSG: 32634. For the file save it as \'low_flood_hex\'
+-   Geopackage this layer to save it. Remember to change the CRS projection to EPSG: 32634. For the file save it as 'low_flood_hex'

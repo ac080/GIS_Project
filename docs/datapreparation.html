@@ -78,6 +78,7 @@ ul.task-list{list-style: none;}
   <li class="nav-item dropdown ">
     <a class="nav-link dropdown-toggle" href="#" id="nav-menu-methodology" role="button" data-bs-toggle="dropdown" aria-expanded="false">Methodology</a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-methodology">    
+        <li class="dropdown-header">reserch.qmd</li>
         <li>
     <a class="dropdown-item" href="./datacollection.html">
  <span class="dropdown-text">Data Collection</span></a>
@@ -136,6 +137,8 @@ ul.task-list{list-style: none;}
   <li><a href="#land-use-of-derna-city" id="toc-land-use-of-derna-city" class="nav-link active" data-scroll-target="#land-use-of-derna-city">Land Use Of Derna City</a></li>
   <li><a href="#derna-city-hexagon-map" id="toc-derna-city-hexagon-map" class="nav-link" data-scroll-target="#derna-city-hexagon-map">Derna City Hexagon Map</a></li>
   <li><a href="#flooding-extent-of-derna-city" id="toc-flooding-extent-of-derna-city" class="nav-link" data-scroll-target="#flooding-extent-of-derna-city">Flooding Extent Of Derna City</a></li>
+  <li><a href="#use-of-iso-area-to-show-accessibility" id="toc-use-of-iso-area-to-show-accessibility" class="nav-link" data-scroll-target="#use-of-iso-area-to-show-accessibility">Use of ISO-Area To Show Accessibility</a></li>
+  <li><a href="#identifying-potential-evacuation-centres" id="toc-identifying-potential-evacuation-centres" class="nav-link" data-scroll-target="#identifying-potential-evacuation-centres">Identifying Potential Evacuation Centres</a></li>
   </ul>
 </nav>
     </div>
@@ -179,9 +182,20 @@ ul.task-list{list-style: none;}
 <section id="flooding-extent-of-derna-city" class="level3">
 <h3 class="anchored" data-anchor-id="flooding-extent-of-derna-city">Flooding Extent Of Derna City</h3>
 <hr>
-<p>In order to compare with our land use layers, we extracted the raster layer of flooding extent in Libya and the elevation model from the <a href="https://data.humdata.org/event/f1c3a777-4079-49fb-9d64-12a72f46f1e3">Humanitarian Data Exchange portal</a>. We then clipped the raster layer to the size of Derna City and stretched it to current extent to obtain results of the most heavily flooded zones in our study area.&nbsp;</p>
-<p><br>
-</p>
+<p>In order to compare with our land use layers, we extracted the raster layer of flooding extent in Libya and the elevation model from the <a href="https://data.humdata.org/event/f1c3a777-4079-49fb-9d64-12a72f46f1e3">Humanitarian Data Exchange portal</a>. We then clipped the raster layer to the size of Derna City and stretched it to current extent to obtain results of the most heavily flooded zones in our study area.</p>
+</section>
+<section id="use-of-iso-area-to-show-accessibility" class="level3">
+<h3 class="anchored" data-anchor-id="use-of-iso-area-to-show-accessibility">Use of ISO-Area To Show Accessibility</h3>
+<hr>
+<p>To understand the proximity between the shelters and residential areas, we decided to use ISO-Area. This allows for the creation of zones based on consistent travel distances from shelters, providing a clear spatial representation of accessibility.</p>
+<p>Our group feels that using distance as a measurement provides a more tangible and straightforward representation of the physical coverage area. Knowing the spatial extent covered by shelters in terms of distance is crucial for effective emergency planning, especially when considering the challenges posed by damaged infrastructure and roads.</p>
+<p>This is in contrast to a time-based measurement, which may be inaccurate in a disaster. This is because roads may be damaged or destroyed and people may need to use alternative routes that may not rely on the conventional road network, which may lead to variations in travel time.</p>
+</section>
+<section id="identifying-potential-evacuation-centres" class="level3">
+<h3 class="anchored" data-anchor-id="identifying-potential-evacuation-centres">Identifying Potential Evacuation Centres</h3>
+<hr>
+<p>We identified potential shelters through the use of Point Sampling Tool plugin. This extracts the raster values (elevation and slope layer) at the specific centres, allowing us to categorise locations based on the ideal values.</p>
+<p>Our group also thought about using Analytic Hierarchy Process (AHP), which is a multi-criteria decision analysis method that helps in structuring and solving complex decision problems. We decided not to use the AHP as we had to assign weights to all the criteria and their relative importance. Unfortunately, due to limited research conducted by the Libyan government, we were not able to figure out which criteria holds a greater importance, leading us to exclude this method from our analysis.</p>
 
 
 </section>

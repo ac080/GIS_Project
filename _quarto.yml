@@ -10,6 +10,7 @@ website:
         text: "Project Proposal"
       - text: "Methodology"
         menu:
+        - research.qmd
         - datacollection.qmd
         - datapreparation.qmd
         - potential_sites.qmd

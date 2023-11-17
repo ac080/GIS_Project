@@ -78,6 +78,7 @@ ul.task-list{list-style: none;}
   <li class="nav-item dropdown ">
     <a class="nav-link dropdown-toggle" href="#" id="nav-menu-methodology" role="button" data-bs-toggle="dropdown" aria-expanded="false">Methodology</a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-methodology">    
+        <li class="dropdown-header">reserch.qmd</li>
         <li>
     <a class="dropdown-item" href="./datacollection.html">
  <span class="dropdown-text">Data Collection</span></a>
@@ -179,8 +180,6 @@ ul.task-list{list-style: none;}
 <li><p>From the menu bar, select Vector &gt; Geoprocessing Tools &gt; Clip.</p></li>
 </ul>
 <p><img src="images/clip_path.png" class="img-fluid"></p>
-<p><br>
-</p>
 <ul>
 <li>Put the input layer as the layer you wish to clip and the Overlay layer as Derna_city_250m_hexagon.</li>
 </ul>
@@ -191,13 +190,10 @@ ul.task-list{list-style: none;}
 <p><img src="images/chloro_11_donotfilter.png" class="img-fluid"></p>
 <ul>
 <li>Click run and close the dialogue once it’s done.</li>
-</ul>
-<!-- -->
+<li>A temporary clipped layer will be created on your layer panel.&nbsp;</li>
+<li>Now we are going to save the layers in a GeoPackage database.
 <ul>
-<li><p>A temporary clipped layer will be created on your layer panel.&nbsp;</p></li>
-<li><p>Now we are going to save the layers in a GeoPackage database.</p>
-<ul>
-<li>Create a new sub-folder called GeoPackage and use the export feature by right clicking the clipped layers and save features as geopackage.</li>
+<li>Create a new sub-folder called GeoPackage and use the export feature by right clicking the clipped layers and save features as GeoPackage.</li>
 </ul></li>
 </ul>
 <div class="quarto-figure quarto-figure-center">
@@ -217,9 +213,6 @@ ul.task-list{list-style: none;}
 <ul>
 <li><p>Click OK once done. The layer is now saved.</p></li>
 <li><p>Remove the temporary clipped layer</p></li>
-</ul>
-<!-- -->
-<ul>
 <li><p>Repeat for the remaining feature layers.&nbsp;</p>
 <ul>
 <li>Education, residential, evacuation centres, medical facilities, road network, waterway</li>
@@ -227,7 +220,7 @@ ul.task-list{list-style: none;}
 </ul>
 <p><br>
 </p>
-<p>We will now perform the same action for the raster layers of Derna city's land elevation model.&nbsp;</p>
+<p>We will now perform the same action for the raster layers of Derna city’s land elevation model.&nbsp;</p>
 <ul>
 <li>From the menu bar, go to <strong>Raster &gt; Extraction &gt; Clip Raster by Layer.</strong></li>
 </ul>
@@ -240,7 +233,7 @@ ul.task-list{list-style: none;}
 <ul>
 <li><p>Click Run.</p></li>
 <li><p>A temporary Clipped (raster) layer will be created.</p></li>
-<li><p>Export and save the layer as a Geopackage. Remember to change the CRS projection. Rename the layer to 'elevation model'</p></li>
+<li><p>Export and save the layer as a Geopackage. Remember to change the CRS projection. Rename the layer to ‘elevation model’</p></li>
 <li><p>Before you move on to the next section, remember to remove the raw and temporary layers.</p></li>
 </ul>
 </section>
@@ -249,7 +242,7 @@ ul.task-list{list-style: none;}
 <ul>
 <li><p>Open the attribute table of the layer health_facilities by right clicking and selecting Open Attribute Table.</p></li>
 <li><p>From the menu bar of the attribute table, click on Select Features using an Expression icon.</p></li>
-<li><p>Inside the expression box, select <strong>fields and values &gt; amenity.</strong> Type in '=' and press <strong>All Unique</strong> in the value box on the right. Then double click on 'hospital', 'doctor', 'clinic' as these constitute the medical centres that we are trying to study.</p>
+<li><p>Inside the expression box, select <strong>fields and values &gt; amenity.</strong> Type in ‘=’ and press <strong>All Unique</strong> in the value box on the right. Then double click on ‘hospital’, ‘doctor’, ‘clinic’ as these constitute the medical centres that we are trying to study.</p>
 <p><img src="images/amenity.png" class="img-fluid"></p></li>
 <li><p>Click on the <strong>Select Features</strong> button.</p></li>
 <li><p>Now, we can save the features by <strong>Export &gt; Save Selected Features As</strong> and create a new Geopackage layer. Remember to change all CRS projection to EPSG: 32634.</p></li>
@@ -277,9 +270,9 @@ ul.task-list{list-style: none;}
 <p><img src="images/chloro_13_merge_run.png" class="img-fluid"></p>
 <p>A new temporary merged layer is created and it needs to be saved into a GeoPackage.</p>
 <ul>
-<li>We can save the features by <strong>Export &gt; Save Selected Features As</strong> and create a new Geopackage layer. Remember to change all CRS projection to EPSG: 32634. Save it into a new file "existing_shelters_before_flood"</li>
+<li>We can save the features by <strong>Export &gt; Save Selected Features As</strong> and create a new Geopackage layer. Remember to change all CRS projection to EPSG: 32634. Save it into a new file “existing_shelters_before_flood”</li>
 </ul>
-<p>Repeat the steps to merge the education layer on its own. GeoPackage the layer and name it 'education’</p>
+<p>Repeat the steps to merge the education layer on its own. GeoPackage the layer and name it ‘education’</p>
 </section>
 <section id="creating-centroid-layer-of-existing-shelters-layer" class="level3">
 <h3 class="anchored" data-anchor-id="creating-centroid-layer-of-existing-shelters-layer">1.4 Creating Centroid Layer of Existing Shelters Layer</h3>
@@ -294,7 +287,7 @@ ul.task-list{list-style: none;}
 <ul>
 <li><p>A new temporary Centroid layer will be created in the layer panel.</p></li>
 <li><p>In order to save the new layer, we need to GeoPackage the layer</p></li>
-<li><p>We can save the features by <strong>Export &gt; Save Selected Features As</strong> and create a new Geopackage layer. Remember to change the CRS projection to EPSG: 32634. For the file save it as 'emergency_healthcare_centroid'</p></li>
+<li><p>We can save the features by <strong>Export &gt; Save Selected Features As</strong> and create a new Geopackage layer. Remember to change the CRS projection to EPSG: 32634. For the file save it as ‘emergency_healthcare_centroid’</p></li>
 </ul>
 </section>
 <section id="creating-slope-layer" class="level3">
@@ -316,8 +309,8 @@ ul.task-list{list-style: none;}
 <p>Right click on the Slope layer click on Export select Save As…</p>
 <ul>
 <li><p>Make sure that the format is Geopackage and select the Browse button at the File Name</p></li>
-<li><p>When inside the Geopackage file, create a new 'Slope' file and click on the save button</p></li>
-<li><p>At the Layer input, indicate "Slope"</p></li>
+<li><p>When inside the Geopackage file, create a new ‘Slope’ file and click on the save button</p></li>
+<li><p>At the Layer input, indicate “Slope”</p></li>
 <li><p>At the CRS, click on the drop-down button and click on EPSG: 32634</p></li>
 </ul>
 <p><img src="images/chloro_15_.png" class="img-fluid" width="354"></p>
@@ -328,7 +321,7 @@ ul.task-list{list-style: none;}
 <h3 class="anchored" data-anchor-id="adding-elevation-and-slope-level-to-education-layer">1.6 Adding Elevation and Slope level to Education Layer</h3>
 <p>Firstly, we need to download a plugin. At the menu bar, select Plugins &gt; Manage and Install Plugins…</p>
 <ul>
-<li><p>At the search tab, search for 'Point sampling tool' and click on it</p></li>
+<li><p>At the search tab, search for ‘Point sampling tool’ and click on it</p></li>
 <li><p>At the bottom right, click on Install Plugin</p></li>
 </ul>
 <p>After the plugin is installed, close the dialog window</p>
@@ -336,29 +329,29 @@ ul.task-list{list-style: none;}
 Ensure that only the education layer and slope raster layer are selected in the layers panel.</p>
 <ul>
 <li><p>Select Plugins &gt; Analyses &gt; Point Sampling Tool</p></li>
-<li><p>In the 'Layers with fields/bands to get values from:', scroll down till you see the slope raster layer</p></li>
+<li><p>In the ‘Layers with fields/bands to get values from:’, scroll down till you see the slope raster layer</p></li>
 <li><p>Click on it</p></li>
-<li><p>At the 'Output point vector layer', select on the Browse button</p></li>
-<li><p>Head to the GeoPackage folder and name the new file as 'Slope_education'</p></li>
+<li><p>At the ‘Output point vector layer’, select on the Browse button</p></li>
+<li><p>Head to the GeoPackage folder and name the new file as ‘Slope_education’</p></li>
 </ul>
 <p><img src="images/pointsampling.png" class="img-fluid" width="340"></p>
 <ul>
 <li>A new point layer will be created</li>
 </ul>
-<p>Repeat the same process to integrate the slope degree into the point layer. Instead of using the education layer and elevation raster layer, use the Slope_education and elevation level layer. Name the new layer 'edu_slope_elevation_model'. After this, remove the Slope_education layer.</p>
+<p>Repeat the same process to integrate the slope degree into the point layer. Instead of using the education layer and elevation raster layer, use the Slope_education and elevation level layer. Name the new layer ‘edu_slope_elevation_model’. After this, remove the Slope_education layer.</p>
 </section>
 <section id="creating-slope-and-elevation-category-field" class="level3">
 <h3 class="anchored" data-anchor-id="creating-slope-and-elevation-category-field">1.7 Creating Slope and Elevation Category Field</h3>
-<p>To make it easier to visualise which education location is most optimal, we will be creating a 'Low', 'Mid' and 'High' category for both the slope and elevation category.</p>
+<p>To make it easier to visualise which education location is most optimal, we will be creating a ‘Low’, ‘Mid’ and ‘High’ category for both the slope and elevation category.</p>
 <p><br>
 For the slope category:<br>
 </p>
 <ul>
-<li>Right click on the 'edu_slope_elevation_model' layer &gt; select Open Attribute Table &gt; Open field calculator</li>
+<li>Right click on the ‘edu_slope_elevation_model’ layer &gt; select Open Attribute Table &gt; Open field calculator</li>
 </ul>
 <p><img src="images/chloro_17_slope.png" class="img-fluid"></p>
 <ul>
-<li><p>At the Output field name, indicate: 'Slope Level'</p></li>
+<li><p>At the Output field name, indicate: ‘Slope Level’</p></li>
 <li><p>At the Output field type, click on the drop down icon and indicate Text as the data type</p></li>
 <li><p>Copy and paste the following code into the expression input:</p></li>
 </ul>
@@ -371,7 +364,7 @@ For the slope category:<br>
 <td><p>CASE</p>
 <p>When (“slope_edu_final.gpkg_Slope” &gt;= 0 and&nbsp; “slope_edu_final.gpkg_Slope” &lt; 2.1) THEN ‘Low Slope’</p>
 <p>When (&nbsp; “slope_edu_final.gpkg_Slope” &gt;= 2.1 and&nbsp; “slope_edu_final.gpkg_Slope” &lt; 4.7) THEN ‘Low Slope’</p>
-<p>When (&nbsp; “slope_edu_final.gpkg_Slope” &gt;= 4.7) THEN ’Low Slope'</p>
+<p>When (&nbsp; “slope_edu_final.gpkg_Slope” &gt;= 4.7) THEN ‘Low Slope’</p>
 <p>END</p></td>
 </tr>
 </tbody>
@@ -385,7 +378,7 @@ For the slope category:<br>
 </ul>
 <p><img src="images/chloro_17_elevation.png" class="img-fluid"></p>
 <ul>
-<li><p>Change the Output field name to 'Elevation'</p></li>
+<li><p>Change the Output field name to ‘Elevation’</p></li>
 <li><p>Copy and paste the following code into the expression input:</p></li>
 </ul>
 <table class="table">
@@ -408,7 +401,7 @@ For the slope category:<br>
 </ul>
 <p><img src="images/chloro_17_finaldef.png" class="img-fluid"></p>
 <ul>
-<li><p>Change the Output field name to 'Final Def'</p></li>
+<li><p>Change the Output field name to ‘Final Def’</p></li>
 <li><p>Copy and paste the following code into the expression input:</p></li>
 </ul>
 <table class="table">
@@ -427,7 +420,7 @@ For the slope category:<br>
 <p>WHEN&nbsp; (“Elevation” =&nbsp; ‘High Elevation’ and&nbsp; “Slope Level” = ‘Low Slope’) THEN ‘High elevation, Low slope’</p>
 <p>WHEN&nbsp; (“Elevation” =&nbsp; ‘High Elevation’ and&nbsp; “Slope Level” = ‘Mid Slope’) THEN ‘High elevation, Mid slope’</p>
 <p>WHEN&nbsp; (“Elevation” =&nbsp; ‘High Elevation’ and&nbsp; “Slope Level” = ‘High Slope’) THEN ‘High elevation/slope’</p>
-<p>WHEN "Slope Level" IS NULL THEN "Elevation"</p>
+<p>WHEN “Slope Level” IS NULL THEN “Elevation”</p>
 <p>END</p></td>
 </tr>
 </tbody>
@@ -442,7 +435,7 @@ For the slope category:<br>
 <li><p>For the input layer: Flood - s2_20230912_floodextent_derna</p></li>
 <li><p>Overlay layer: Derna_City</p></li>
 <li><p>For both the layer, click on the Advanced options</p></li>
-<li><p>At the Invalid feature filtering, click on the drop down and select 'Do not Filter (Better Performance', and click on the back button on the top left</p></li>
+<li><p>At the Invalid feature filtering, click on the drop down and select ‘Do not Filter (Better Performance’, and click on the back button on the top left</p></li>
 </ul>
 <p><img src="images/symmetrical_diff_input.png" class="img-fluid" width="401"></p>
 <ul>
@@ -451,8 +444,8 @@ For the slope category:<br>
 <p><img src="images/chloro_18b.png" class="img-fluid" width="378"></p>
 <ul>
 <li><p>Click on the run button</p></li>
-<li><p>A new layer 'Symmetrical difference' will be created</p></li>
-<li><p>Geopackage this layer to save it. Remember to change the CRS projection to EPSG: 32634. For the file save it as 'low_flood_hex'</p></li>
+<li><p>A new layer ‘Symmetrical difference’ will be created</p></li>
+<li><p>Geopackage this layer to save it. Remember to change the CRS projection to EPSG: 32634. For the file save it as ‘low_flood_hex’</p></li>
 </ul>
 
 

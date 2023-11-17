@@ -3,8 +3,10 @@ title: "About"
 editor: visual
 ---
 
-# Welcome! 
+# Welcome!
 
 We are G1T1, comprising of Anthea and Amanda.
 
-![](images/pic%20of%20us.jpeg){width="513"}
+![](images/pic%20of%20us.jpeg)
+
+Access our GitHub Repository here: <https://github.com/ac080/GIS_Project>
