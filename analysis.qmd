@@ -23,7 +23,7 @@ This map shows the aftermath of the flood, where the roads are damaged and block
 
 ![](images/Accessibility%20Current%20After%20Flood.png)
 
-The recent flooding event caused roads to be blocked and damaged, causing a significant reduction in the accessibility of shelters. There are now fewer highly accessible shelters. Additionally, residents who are displaced from the flood have to travel more than 1km to access shelters outside of the flooded area if the shelters in the flooded area are not usable. The blocked roads also resulted in fewer residential towns to fall within 2.5 km of a shelter compared to Figure 1.
+The recent flooding event caused roads to be blocked and damaged, causing a significant reduction in the accessibility of shelters. There are now fewer highly accessible shelters. Additionally, residents who are displaced from the flood have to travel more than 1km to access shelters outside of the flooded area if the shelters in the flooded area are not usable. The blocked roads also resulted in fewer residential towns to fall within 2.5 km of a shelter.
 
 ### Accessibility of Existing and Potential Shelters After Flood
 
